@@ -9,12 +9,6 @@ public class SherlockAndValidString
 {
     // Complete the isValid function below.
     static String isValid(String s) {
-         String name = "Sanmi";
-         String can = name.toLowerCase();
-        System.out.println(name);
-        System.out.println(can);
-
-
         if(s == null)
         {
             return "NO";
