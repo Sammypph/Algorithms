@@ -9,9 +9,9 @@ public class Main {
     {
 //        //First LinkedList
 //        LinkedList linkedList = new LinkedList();
-//        linkedList.head = new LinkedList.Node(1);
-//        LinkedList.Node second = new LinkedList.Node(2);
-//        LinkedList.Node third = new LinkedList.Node(4);
+//        linkedList.head = new LinkedList.amazon.Node(1);
+//        LinkedList.amazon.Node second = new LinkedList.amazon.Node(2);
+//        LinkedList.amazon.Node third = new LinkedList.amazon.Node(4);
 //        linkedList.head.next = second;
 //        second.next = third;
 //
@@ -20,21 +20,28 @@ public class Main {
 //
 //        //Second LinkedList
 //        LinkedList linkedList1 = new LinkedList();
-//        linkedList1.head = new LinkedList.Node(1);
-//        LinkedList.Node fourth = new LinkedList.Node(3);
-//        LinkedList.Node fifth = new LinkedList.Node(4);
+//        linkedList1.head = new LinkedList.amazon.Node(1);
+//        LinkedList.amazon.Node fourth = new LinkedList.amazon.Node(3);
+//        LinkedList.amazon.Node fifth = new LinkedList.amazon.Node(4);
 //        linkedList1.head.next = fourth;
 //        fourth.next = fifth;
 //
 //        linkedList1.printList();
 
 
-        List<String> people = Arrays.asList("sanmi", "bola", "simi");
+//        List<String> people = Arrays.asList("sanmi", "bola", "simi");
+//
+//        if(people.isEmpty())
+//        {
+//            System.out.println("List is Empty");
+//        }
 
-        if(people.isEmpty())
-        {
-            System.out.println("List is Empty");
+        System.out.println("Here");
+        System.out.println(args.length);
+        for (String arg : args) {
+            System.out.println("Argument: " +arg);
         }
+
     }
 
 }
