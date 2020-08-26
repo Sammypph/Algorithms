@@ -89,9 +89,13 @@ public class StringCompression {
             allStrings.add(value);
         }
 
-//
+        //Testing first method
+        for(String s : allStrings)
+        {
+            compress(s);
+        }
 
-
+        //Testing second method
         for(String s : allStrings)
         {
             compressString(s);
