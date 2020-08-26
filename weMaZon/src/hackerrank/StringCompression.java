@@ -49,6 +49,33 @@ public class StringCompression {
         System.out.println(result.toString());
     }
 
+
+
+    public static void compressString(String source) {
+        StringBuffer result = new StringBuffer();
+
+        if(source != null && source.length() > 1)
+        for (int i = 0; i < source.length(); i++) {
+            int runLength = 1;
+            while(i < source.length() - 1 && source.charAt(i) == source.charAt(i+1))
+            {
+                runLength++;
+                i++;
+            }
+            result.append(source.charAt(i));
+
+            if(runLength > 1)
+            result.append(runLength);
+        }
+
+        else
+            System.out.println(source);
+
+
+        if(result.length() > 0)
+        System.out.println(result.toString());
+    }
+
     public static void main(String[] args) {
         /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
         List<String> allStrings = new ArrayList<>();
@@ -62,10 +89,12 @@ public class StringCompression {
             allStrings.add(value);
         }
 
+//
+
 
         for(String s : allStrings)
         {
-            compress(s);
+            compressString(s);
         }
 
     }
