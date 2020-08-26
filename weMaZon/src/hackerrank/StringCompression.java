@@ -45,6 +45,7 @@ public class StringCompression {
             System.out.println(input);
         }
 
+        if(result.length() > 0)
         System.out.println(result.toString());
     }
 
