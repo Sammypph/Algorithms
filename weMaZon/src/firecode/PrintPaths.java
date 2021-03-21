@@ -20,12 +20,12 @@ public class PrintPaths {
     // 0 0
     // 1 1
 
-        // A X
-        // D E
+   // A X
+   // D E
 
     List<String> validPaths = new ArrayList<>();
 
-        Queue<int [][]> boardQueue = new LinkedList<>();
+    Queue<int [][]> boardQueue = new LinkedList<>();
 
     for(int i = 0; i < row; i++)
     {
@@ -50,6 +50,8 @@ public class PrintPaths {
 
     }
 
+
+    //TODO - Add recursive solution.
 
     public static void getRowPath()
     {}

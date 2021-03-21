@@ -9,7 +9,7 @@ import java.util.concurrent.*;
 import java.util.regex.*;
 
 
-import com.google.gson.Gson;
+//import com.google.gson.Gson;
 import java.net.*;
 
 
@@ -65,9 +65,9 @@ public class ArticleAPI {
 
     public static Article convertToClass(String s){
 
-        Gson gson = new Gson();
-        return gson.fromJson(s, Article.class);
-        //return null;
+        //Gson gson = new Gson();
+        //return gson.fromJson(s, Article.class);
+        return null;
     }
 
     public static String getResultFromUrl(String urlStr){
