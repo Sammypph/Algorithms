@@ -1,7 +1,6 @@
 package MSFT;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 /**
  * Created by oakinrele on Aug, 2020
@@ -108,6 +107,8 @@ public class StringCompressionAndDecompression {
     }
 
 
+
+    //AAAABBBBCCCC
     public static String encode(String source) {
         StringBuffer dest = new StringBuffer();
         for (int i = 0; i < source.length(); i++) {
@@ -123,6 +124,8 @@ public class StringCompressionAndDecompression {
         return dest.toString();
     }
 
+
+    static Map<String,Integer> authorAndBooks = new HashMap<>();
     public static void main(String[] args) {
         //AAABBBCCC    expected a3b3c3
         //AAABBBCCCDD
@@ -130,7 +133,7 @@ public class StringCompressionAndDecompression {
         //System.out.println(compress("a"));
         //System.out.println(encode("AABBBCCCC"));
 
-        System.out.println(compress("AABBBCCCC"));
+        // System.out.println(compress("AABBBCCCC"));
 
 
         //a31b3d11cd
@@ -143,5 +146,50 @@ public class StringCompressionAndDecompression {
         ///AAABBBCCC
         //AAADBBBCCCA
         //System.out.println(decode("A12D1B3C3A1"));
+
+//        String input = "Adelola:newBook,Adelola:newBook,Adelola:newBook,Adewunmi:newBook,Adewunmi:newBook,Bolaji:Nothing";
+//        String [] records = input.split(","); //O(n + k) where n is the length of the string and k is the matcher O(N)
+//
+//        //Tokenize records
+//        for(String record : records){ //O(length of records - L) plus O(L)
+//            String [] authorAndTitle = record.split(":");
+//            computeResult(authorAndTitle);
+//        }
+//
+//        for (Map.Entry<String,Integer> value: authorAndBooks.entrySet()) { //O(size of map. M) O(M)
+//            System.out.println(String.format("Author: %s  Books : %s",value.getKey(),value.getValue()));
+//        }
+//
+//        StringBuilder stringBuilder = new StringBuilder();
+//        stringBuilder.append("Ade");
+
+        StringBuilder sb = new StringBuilder();
+        String string = "  Bob    Loves  Alice   ";
+        String [] strings = string.split(" ");
+        System.out.println(Arrays.deepToString(strings));
+        int end = strings.length - 1;
+        for (int i = end; i >= 0; i--){
+            if(!strings[i].isEmpty()){
+                sb.append(strings[i]).append(" ");
+                if(i != 0) {
+                    sb.append(" ");
+                }
+            }
+        }
+
+
+        //System.out.println(sb.toString());
+
+        String bn = "sanmi";
+        System.out.println(bn.substring(0,4));
+    }
+    //O(N+L+M)
+
+    private static void computeResult(String [] input){
+         if(authorAndBooks.containsKey(input[0])){ //O(1)
+             authorAndBooks.put(input[0],authorAndBooks.get(input[0]) + 1); //O(1)
+         }
+         else
+         authorAndBooks.put(input[0],authorAndBooks.getOrDefault(input[0],0) + 1); //O(1)
     }
 }
