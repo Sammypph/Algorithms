@@ -1,4 +1,4 @@
-package fairmoney;
+package company.fairmoney;
 
 
 import java.util.ArrayList;

@@ -1,4 +1,4 @@
-package MSFT;
+package company.MSFT;
 
 /**
  * Created by oakinrele on Jul, 2021
