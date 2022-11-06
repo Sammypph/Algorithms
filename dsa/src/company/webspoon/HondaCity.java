@@ -1,17 +1,19 @@
-package webspoon;
+package company.webspoon;
 
 /**
  * Created by oakinrele on Oct, 2020
  */
 
+
 /**
- *   InnovaCrysta class
+ *   HondaCity class
  **/
-class InnovaCrysta extends Car{
+
+class HondaCity extends Car{
     int mileage;
-    public InnovaCrysta(int mileage)
+    public HondaCity(int mileage)
     {
-        super(false,"6");
+        super(true,"4");
         this.mileage = mileage;
     }
     public String getMileage()
@@ -19,3 +21,4 @@ class InnovaCrysta extends Car{
         return String.valueOf(this.mileage)+" kmpl" ;
     }
 }
+

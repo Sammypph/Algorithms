@@ -1,4 +1,4 @@
-package MSFT;
+package company.MSFT;
 
 import java.util.*;
 

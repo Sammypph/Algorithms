@@ -1,4 +1,4 @@
-package webspoon;
+package company.webspoon;
 
 import java.util.HashMap;
 import java.util.List;

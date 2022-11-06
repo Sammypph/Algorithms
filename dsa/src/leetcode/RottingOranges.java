@@ -19,7 +19,7 @@ public class RottingOranges {
         Set<String> fresh = new HashSet<>();
         Set<String> rotten = new HashSet<>();
 
-        //Iterate through the given gird and put all rotten oranges in the queue
+        //Iterate through the given grid and put all rotten oranges in the queue
          for(int i = 0; i < m; i++)
          {
              for(int j = 0; j < n; j++)

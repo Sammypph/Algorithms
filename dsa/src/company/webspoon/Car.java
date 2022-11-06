@@ -1,4 +1,4 @@
-package webspoon;
+package company.webspoon;
 
 /**
  * Created by oakinrele on Oct, 2020
